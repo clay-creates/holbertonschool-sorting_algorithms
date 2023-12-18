@@ -7,15 +7,10 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *sorted;
+	listint_t *sorted, *current, *next, *current_sorted;
+
 	sorted = NULL;
-
-	listint_t *current;
 	current = *list;
-
-	listint_t *next;
-
-	listint_t *current_sorted;
 
 	while (current != NULL)
 	{
