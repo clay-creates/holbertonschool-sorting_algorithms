@@ -8,13 +8,13 @@
 
 void quick_sort(int *array, size_t size)
 {
-	int i, j, pivot;
+	int i, j, temp, pivot;
 
 	pivot = array[size / 2];
 	i = 0;
 	j = size - 1;
 
-	if (size < 2)
+	if (array == NULL)
 	{
 		return;
 	}
@@ -31,7 +31,7 @@ void quick_sort(int *array, size_t size)
 		}
 		if (i <= j)
 		{
-			int temp = array[i];
+			temp = array[i];
 			array[i] = array[j];
 			array[j] = temp;
 			i++;
