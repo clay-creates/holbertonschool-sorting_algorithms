@@ -60,6 +60,8 @@ void quick_sort(int *array, size_t size)
 	{
 		part = partition(array, low, high);
 
+		print_array(array, size);
+
 		quick_sort(array, part);
 		quick_sort(array + part + 1, size - part - 1);
 	}
