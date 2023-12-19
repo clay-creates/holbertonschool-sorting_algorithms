@@ -24,11 +24,10 @@ void selection_sort(int *array, size_t size)
 			if (array[j] < array[min_idx])
 			{
 				min_idx = j;
-
-				temp = array[min_idx];
-				array[min_idx] = array[i];
-				array[i] = temp;
 			}
+			temp = array[min_idx];
+			array[min_idx] = array[i];
+			array[i] = temp;
 			print_array(array, size);
 		}
 	}
