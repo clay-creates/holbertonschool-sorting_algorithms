@@ -37,7 +37,6 @@ void quick_sort(int *array, size_t size)
 			i++;
 			j--;
 		}
-		print_array(array, size);
 	}
 
 	quick_sort(array, j + 1);
