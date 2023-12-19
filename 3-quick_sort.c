@@ -56,8 +56,6 @@ void quick_sort(int *array, size_t size)
 	low = 0;
 	high = size - 1;
 
-	print_array(array, size);
-
 	if (low < high)
 	{
 		part = partition(array, low, high);
